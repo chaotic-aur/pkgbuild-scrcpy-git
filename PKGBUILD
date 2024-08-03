@@ -3,13 +3,13 @@
 # Contributor: skydrome -at- protonmail
 
 pkgname=scrcpy-git
-pkgver=2.1.1_r2217.gfcdf847d
+pkgver=2.6.1_r2501.g44b3fd82
 pkgrel=1
 pkgdesc='Display and control your Android device'
 arch=($CARCH)
 url='https://github.com/Genymobile/scrcpy'
-license=(Apache)
-depends=(android-tools ffmpeg sdl2)
+license=(Apache-2.0)
+depends=(android-tools ffmpeg sdl2 glibc libusb)
 makedepends=(git meson)
 conflicts=(${pkgname%-git})
 provides=(${pkgname%-git})
